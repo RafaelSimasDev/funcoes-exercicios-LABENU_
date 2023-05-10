@@ -1,40 +1,54 @@
 // ====== exercício 3 letra A ======
 
-const exercicio10 = (numero1, numero2) => {
-    return (`O resultado da soma é: ${numero1 + numero2}.`)
+const funcaoSoma = (nume1, nume2) => {
+    let soma = nume1 + nume2
+    return (`O resultado da soma é: ${soma}.`)
 }
-// console.log(exercicio10(10, 36))
 
-const exercicio20 = (numero3, numero4) => {
-    return (`O resultado da subtração é: ${numero3 - numero4}.`)
+
+const funcaoSubtracao = (nume1, nume2) => {
+    let subtracao = nume1 - nume2
+    return (`O resultado da subtração é: ${subtracao}.`)
 }
-// console.log(exercicio20(560, 345))
 
-const exercicio30 = (numero5, numero6) => {
-    return (`O resultado da multiplicação é: ${numero5 * numero6}.`)
+
+const funcaoMultiplicacao = (nume1, nume2) => {
+    let multiplicacao = nume1 * nume2
+    return (`O resultado da multiplicação é: ${multiplicacao}.`)
 }
-// console.log(exercicio30(12, 5))
 
-const exercicio40 = (numero7, numero8) => {
-    return (`O resultado da divisão é: ${numero7 / numero8}.`)
+
+const funcaoDivisao = (nume1, nume2) => {
+    let divisao = nume1 / nume2
+    return (`O resultado da divisão é: ${divisao}.`)
 }
-// console.log(exercicio40(300, 12))
 
-// ====== 
 
-const nume1 = Number(prompt(`Digite seu primeiro número`))
-const nume2 = Number(prompt(`Digite seu segundo número`))
+// ====== exercício 3 letra B ======
 
-// ======
+let nume1 = Number(prompt(`Digite seu primeiro número`))
+let nume2 = Number(prompt(`Digite seu segundo número`))
 
-exercicio10(nume1, nume2)
-exercicio20(nume1, nume2)
-exercicio30(nume1, nume2)
-exercicio40(nume1, nume2)
+// ====== exercício 3 letra C ======
 
-// ======
+// c) Invoque cada uma das 4 funções, passando como
+// argumento os dois números recebidos do usuário.
 
-console.log(exercicio10(nume1, nume2))
-console.log(exercicio20(nume1, nume2))
-console.log(exercicio30(nume1, nume2))
-console.log(exercicio40(nume1, nume2))
+funcaoSoma(nume1, nume2)
+funcaoSubtracao(nume1, nume2)
+funcaoMultiplicacao(nume1, nume2)
+funcaoDivisao(nume1, nume2)
+
+// ====== exercício 3 letra D ======
+
+// d) Por fim, crie variáveis para receber o retorno de cada uma das funções
+// e imprima o resultado das operações no console.
+
+let resultado1 = funcaoSoma(nume1, nume2)
+console.log(resultado1)
+let resultado2 = funcaoSubtracao(nume1, nume2)
+console.log(resultado2)
+let resultado3 = funcaoMultiplicacao(nume1, nume2)
+console.log(resultado3)
+let resultado4 = funcaoDivisao(nume1, nume2)
+console.log(resultado4)

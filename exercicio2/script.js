@@ -20,7 +20,7 @@ const letraB =(nume1, nume2) => {
 const letraC = (numero1) => {
     const par = numero1 %2 === 0
 
-    return (`O número ${numero1} é par. ${par} `)
+    return (`O número ${numero1} é par? ${par} `)
 }
 // console.log(letraC(5))
 // console.log(letraC(8))
